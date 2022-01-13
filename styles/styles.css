@@ -11,7 +11,6 @@ body {
     background-color:rgb(85, 117, 117);
     text-align: center;
     padding: 20px;
-    color: rgb(9, 82, 85);
 }
 /* Style the top navigation bar */
 .topnav {
@@ -29,7 +28,7 @@ body {
 }
 /* Style nav links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(221, 221, 221);
     color: black;
 }
 /* Style active link */
@@ -64,8 +63,15 @@ body {
 .column {
     float: left;
     width: 50%;
+    height: 100vh;
     padding: 15px;
-    background-color: yellow;
+    background-color: rgb(221, 221, 221);
+}
+#banner {
+    width: 100%;
+}
+#table_medium {
+    width: 50vw;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -73,10 +79,28 @@ body {
     display: table;
     clear: both;
 }
+/* Remove extra photo in homepage for mobile devices */
+@media screen and (max-width: 600px) {
+.column{
+    float: none;
+    width: 100%;
+} 
+#col2 {
+    display: none;
+}   
+}
 .footer {
     position: fixed;
     width: 100%;
-    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(221, 221, 221);
     text-align: center;
     padding: 10px;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
 }
