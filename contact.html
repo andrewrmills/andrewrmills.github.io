@@ -26,21 +26,43 @@
     <!-- Page's main content -->
     <main>
       <div class="row">
-        <div class="column">
-          <h2>Contact</h2>
-          <p>Paragraph 1.</p>
-          <p>Paragraph 2.</p>
+        <div class="column" id="contact">
+          <h2>Contact Us</h2>
+          <!-- displaying address and phone number -->
+          <p id="address">
+            <h3>Address</h3>
+            1 Island Street <br>
+            Kerikeri <br>
+            Bay of Islands <br>
+            New Zealand
+          </p>
+          <p id="phone">
+           <h3>Phone</h3>
+            09 401 4019
+          </p>
+          <p id="email">
+            <h3>E-Mail</h3>
+             contact@haukai.co.nz
+           </p>
         </div>
-        <div class="column">
-          <h2>Column 2</h2>
-          <p>Paragraph 1.</p>
-          <p>Paragraph 2.</p>
+        <!-- embedded google maps showing location (not exact as the address doesn't exist) -->
+        <div class="column" id="map">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+             <iframe width="600" height="500" id="gmap_canvas" 
+             src="https://maps.google.com/maps?q=kerikeri&t=&z=15&ie=UTF8&iwloc=&output=embed"
+             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br>
+             <style>.mapouter{position:relative;text-align:left;}</style>
+             <style>.gmap_canvas {overflow:hidden;background:none!important;}</style>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <!-- Footer that is used across all the pages of website -->
     <footer class="footer">
       <p>
+        <!-- link to privacy policy page -->
         <a href="privacy.html" >Privacy Policy</a>
       </p>
       </footer>
