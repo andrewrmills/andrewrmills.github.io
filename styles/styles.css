@@ -116,6 +116,10 @@ body {
     padding-top: 20px;
     height: 30%;
 }
+/* centering reservation form */
+#reservation {
+    text-align: center;
+}
 /* stack (or remove) columns for mobile devices */
 @media screen and (max-width: 700px) {
 .column{
