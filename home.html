@@ -8,6 +8,15 @@
    <!-- Loads an icon library to show a hamburger menu on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKK7NW5DGG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XKK7NW5DGG');
+    </script>
   </head>
   <body>
     <!-- Main header that is used across all the pages of website -->
@@ -15,12 +24,12 @@
       <h1>Haukai</h1>
     </header>
     <nav class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
+      <a href="home.html" class="active">Home</a>
       <a href="contact.html" >Contact</a>
       <a href="hours.html" >Hours</a>
       <a href="menu.html" >Menu</a>
       <a href="reservations.html">Reservations</a>   
-      <a href="private/private.html">Staff Login</a> 
+      <a id="staff" href="private/private.html">Staff Login</a> 
       <a href="javascript:void(0);" class="icon" onclick="mobHamburger()"> <!-- Hamburger menu to toggle the navigation links -->
          <i class="fa fa-bars"></i></a>  
     </nav>
