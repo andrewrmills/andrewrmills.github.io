@@ -2,3 +2,7 @@ AuthType Basic
 AuthName "Restricted access"
 AuthUserFile "/app/.htpasswd"
 Require valid-user
+
+# For marking:
+# User name: staff
+# Password: passw0rd
